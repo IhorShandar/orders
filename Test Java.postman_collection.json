@@ -6,13 +6,13 @@
 	},
 	"item": [
 		{
-			"name": "localhost:8080/createItem",
+			"name": "localhost:8089/createItem",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"tomatoes\",\r\n    \"priceByOne\": 7.30\r\n}",
+					"raw": "{\r\n    \"name\": \"berries\",\r\n    \"priceByOne\": 88.30\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,11 +20,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/createItem",
+					"raw": "localhost:8089/createItem",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"createItem"
 					]
@@ -33,19 +33,19 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8080/minPrice/potatoes",
+			"name": "localhost:8089/minPrice/potatoes",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/minPrice/potatoes",
+					"raw": "localhost:8089/minPrice/tomatoes",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"minPrice",
-						"potatoes"
+						"tomatoes"
 					]
 				},
 				"description": "get item at the lowest price:\r\nlocalhost:8080/minPrice/name - where \"name\" is name of item. if name doesn't exist, get all items."
@@ -53,7 +53,7 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8080/createOrder",
+			"name": "localhost:8089/createOrder",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -67,11 +67,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/createOrder",
+					"raw": "localhost:8089/createOrder",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"createOrder"
 					]
@@ -81,16 +81,16 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8080/deleteOrder/1",
+			"name": "localhost:8089/deleteOrder/1",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/deleteOrder/1",
+					"raw": "localhost:8089/deleteOrder/1",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"deleteOrder",
 						"1"
@@ -101,16 +101,16 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8080/deleteAllItems",
+			"name": "localhost:8089/deleteAllItems",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/deleteAllItems",
+					"raw": "localhost:8089/deleteAllItems",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"deleteAllItems"
 					]
