@@ -27,10 +27,13 @@ After open Postman, import collection "Test Java.postman_collection.json" from t
 HOW WORK THIS PROGRAM:
 ------------------------------------------------------------------
 localhost:8089/createItem - first you need create items (in docker image my_mysql is already created 10 items). // in your localhost will use port 8080
+
 localhost:8089/minPrice/{name} -  where "name" is name of item. if name doesn't exist, get all items.
+
 localhost:8080/createOrder - in body of response join 'order' to 'item' 
     "item":{
         "id":id - identifier of item, that join by order
     },
     "price" = priceByOne (of item) * "quantity"
+    
 localhost:8080/deleteOrder/{id} - "id" - identifier of order. You can delete order, if it was created 10 minutes ago.
