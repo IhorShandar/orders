@@ -5,7 +5,6 @@ import com.ua.orders.models.SomeItem;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -21,10 +20,7 @@ public class SomeItemServicesImpl implements SomeItemServices {
 
     @Override
     public SomeItem findLowestPrice(String someItemName) {
-        return someItemDao.findAll()
-                .stream().filter(someItem -> someItem.getName().equals(someItemName))
-                .min(Comparator.comparingDouble(SomeItem::getPriceByOne))
-                .orElse(null);
+        return someItemDao.findFirstByName(someItemName);
     }
 
     @Override
